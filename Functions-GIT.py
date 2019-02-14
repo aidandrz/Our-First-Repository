@@ -16,7 +16,7 @@ greeting()
 # Aidan Drzewicki
 # 2.14.19
 
-x = 69
+x = 11
 
 def print_something():
     x = 13
