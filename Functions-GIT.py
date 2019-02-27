@@ -48,3 +48,15 @@ def print_number(x):
 
 print_number(12)
 print_number('\n'"Hello World")
+
+
+# 4.14.4; Name & Age
+# Aidan Drzewicki
+# 2.18.19
+
+def name_and_age(name, age):
+    print('\n'"Hi, my name is", name, 'and I am', str(age), 'years old.')
+
+name_and_age('Aidan Drzewicki', 15)
+name_and_age('Gamer', 1)
+name_and_age('E', 63)
