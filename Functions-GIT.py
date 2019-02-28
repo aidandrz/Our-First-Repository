@@ -60,3 +60,16 @@ def name_and_age(name, age):
 name_and_age('Aidan Drzewicki', 15)
 name_and_age('Gamer', 1)
 name_and_age('E', 63)
+
+
+# 4.13.5: Default Parameter Values
+# Aidan Drzewicki
+# 2.19.19
+
+
+def print_two_numbers(x, y = 20):
+    print('First number:', str(x))
+    print('Second number:', str(y))
+
+print_two_numbers(5, 69)
+print_two_numbers(23)
