@@ -111,3 +111,25 @@ try:
 
 except ValueError:
     print('That was not an integer')
+
+
+
+# 4.16.6: Temperature Converter
+# Aidan Drzewicki
+# 2.20.19
+
+def celcius_to_fahrenheit(celcius):
+    return celcius * 1.8 +32
+
+def fahrenheit_to_cesius(fahrenheit):
+    return(fahrenheit - 32) / 1.8
+
+try:
+    c = float(input('Enter a temp in C: '))
+    print('In F: ', round(celcius_to_fahrenheit(c), 2))
+
+    f = float(input('Enter a temp in F: '))
+    print('In C:', round(fahrenheit_to_cesius(f), 2))
+
+except ValueError:
+    print('Just enter a Float 4Head')
