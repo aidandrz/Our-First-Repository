@@ -62,6 +62,7 @@ name_and_age('Gamer', 1)
 name_and_age('E', 63)
 
 
+
 # 4.13.5: Default Parameter Values
 # Aidan Drzewicki
 # 2.19.19
@@ -73,6 +74,7 @@ def print_two_numbers(x, y = 20):
 
 print_two_numbers(5, 69)
 print_two_numbers(23)
+
 
 
 # 4.14.7: Print Multiple Times
@@ -114,7 +116,6 @@ except ValueError:
 
 
 
-<<<<<<< HEAD
 # 4.16.4: Enter Name and Age
 # Aidan Drzewicki
 # 2.20.19
@@ -128,7 +129,9 @@ try:
 
 except ValueError:
     print('Thats not an age')
-=======
+
+
+
 # 4.16.6: Temperature Converter
 # Aidan Drzewicki
 # 2.20.19
@@ -148,4 +151,22 @@ try:
 
 except ValueError:
     print('Just enter a Float 4Head')
->>>>>>> Temperature-Converter
+
+
+
+# 4.16.7: Enter a Positive Number
+# Aidan Drzewicki
+# 2.21.19
+
+def retrieve_positive_number():
+    while True:
+        try:
+            number = int(input('Enter a positive number: '))
+            if number > 0:
+                return number
+            else:
+                print(' Please enter a positive number')
+        except ValueError:
+            print('That wasnt a positive number')
+
+retrieve_positive_number()
